@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon logo link  -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon_r.svg">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--NAVBAR SECTION-->
+<header>
+    <div class="limiter">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/img/r-logo.svg" alt=""> 
+            </div>
+
+            <ul class="navlinks" id="links">
+                <li class="navitems"><a href="index.html" class="itemlinks">Home</a></li>
+                <li class="navitems"><a href="vide.html" class="itemlinks">Video</a></li>
+                <div class="cont">
+                    <li class="navitems"><a href="#product" class="itemlinks" onclick="togglePopup1()">Contact Us</a></li>
+                </div>
+                <li class="navitems"><a href="aboutus.html" class="itemlinks">About</a></li>
+
+            </ul>
+
+            <div id="burger">
+                <div class="burgerlines"></div>
+                <div class="burgerlines"></div>
+                <div class="burgerlines"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <div class="learn-more" >
+        <div class="learn-container">
+            <div class="box-learn" data-aos="flip-down" data-aos-duration="1000">
+            <h1>WHAT MAKES US DIFFERENT FROM THE OTHER PORTABLE NECK FANS </h1>
+            <p>
+                Partnering with the High-Quality Manufacturer. Relenture is providing people with more superior quality of products and we do that through providing more blowing power of air coming out at the vent, longer battery lifespan, reliable charging cable,  foldable, adjustable airflow, little noise and no whine sounds. 
+                <br>
+                <br>
+                A better experience and satisfaction for customers is at the heart of the relenture and we aim more to provide the best customer service and superior quality of different products in the future for fitness, sports, travel.</p>
+
+        </div>
+       </div>
+    </div>
+    
+
+     <!--popup box-->
+
+     <div class="popup" id="popup-1" >
+        <div class="overlay"></div>
+    
+
+        <div class="content">
+            <img class="close-btn" onclick="togglePopup1()" src="assets/img/close.png" alt="">
+            
+            <div class="box-contact">
+                <div class="popup-title">
+                    <h1>CONTACT <span>US</span> </h1>
+                </div>
+
+            <form action="https://formspree.io/f/xeqdozey" method="POST">   
+              <input name="Name" type="text" id="Name" class="feedback-input" placeholder="Enter your name" required="" />   
+              <input name="Sender" id="Sender"  type="email" class="feedback-input" placeholder="Enter your email" required=""/>
+              <textarea name="Message" class="feedback-input" id="Message" placeholder="Enter your messages" required=""></textarea>
+              <button id="btn" type="submit" value="SUBMIT">SUBMIT</button>
+              
+            </form>
+          </div>
+        </div>
+    </div>
+   <!--ABOUT-END-->
+   <script>
+    function togglePopup1(){
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+</script>
+
+
+    <div class="footer-all">
+
+
+        <footer>
+     
+         <div class="icon-container">
+             <img src="assets/img/r-logo.svg" class="logo-footer" data-aos="fade-up" data-aos-duration="1000">
+             <div class="icon2">
+                 <a href="https://www.facebook.com/Relenture">
+                     <img src="assets/img/fb.svg" alt="" data-aos="fade-left" data-aos-duration="2000">
+                 </a>
+                 <a href="https://www.instagram.com/relenture/">
+                     <img src="assets/img/IG.svg" alt="" data-aos="fade-right" data-aos-duration="2000">
+                 </a>
+             </div>
+         </div>
+     
+         <hr>
+         <p> Relenture &copy; <script>document.write(new Date().getFullYear());</script>, All Rights Reserved.</p>
+        </footer>
+     
+     </div>
+     
+     
+
+     <!--JS MENU BAR-->
+
+    <script
+
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
+    
+    <script>
+            const burger = document.getElementById('burger');
+            const links = document.getElementById('links');
+
+            burger.addEventListener('click', () => {
+                links.classList.toggle('active');
+            })
+
+            $("#links").click(() => {
+                links.classList.remove('active');
+            })
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

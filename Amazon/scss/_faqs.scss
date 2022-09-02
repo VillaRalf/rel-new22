@@ -1,0 +1,113 @@
+
+.sectionSixWrapper{
+    background-image: url("assets/img/bg-color2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 700px;
+}
+.sectionSix{
+	margin-top: 80px;
+	text-align: center;
+}
+
+.accordionCont{
+	margin-top: 30px;
+}
+
+.accordion {
+    background-color: #FF0000;
+    opacity: 75%;
+    font-weight: 500;
+	cursor: pointer;
+    font-family: 'Montserrat', sans-serif; 
+	padding: 25px 50px;
+	width: 90%;
+	border: none;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+	color: white;
+	margin-top: 20px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.title{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    background: url("assets/img/red.svg");
+    background-repeat: repeat;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.sub-title{
+    color: #CFD3D7;
+}
+
+.accordion:after {
+    content: '▼';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active{
+    color: #CFD3D7;
+}
+
+.panel {
+  font-size: 15px;
+  padding: 0px 50px;
+  background-color: #FF0000;
+  opacity: 75%;
+    max-height: 0;
+  width: 90%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: left;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  margin: 0 auto;
+}
+
+.panel p{
+	margin: 0px 0px 30px 0px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width:600px){
+    .title{
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 14px;
+    }
+    .sectionFour .sBtnOne{
+        margin-right: 0px;
+    }
+    .sectionFour .sBtnTwo{
+        margin-right: 0px;
+    }
+    .accordion:after {
+        content: '▼';
+        font-weight: bold;
+        float: right;
+        margin-right: -25px !important;
+        color: #fff;
+    }
+    .active:after {
+        content: "\2212";
+      }
+}

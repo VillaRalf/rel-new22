@@ -1,0 +1,51 @@
+.stores-all{
+    height: 100px;
+    background-image: url("assets/img/bg-color2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stores-container{
+    align-items: center;
+    justify-content: center;
+    background: #ff0000;
+    height: 80px;
+
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+.slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.slider .slide-track{
+    margin-top: 18px;
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slider .slide{
+    height: 100px;
+    width: 500px;
+}
+
+
+
+@media(max-width:800px){
+    .slider .slide{
+        height: 100px;
+        width: 400px;
+    }
+}
+@media(max-width:500px){
+
+}

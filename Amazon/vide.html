@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELENTURE VIDEO</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icon logo link  -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon_r.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--NAVBAR SECTION-->
+<header>
+    <div class="limiter">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/img/r-logo.svg" alt=""> 
+            </div>
+
+            <ul class="navlinks" id="links">
+                <li class="navitems"><a href="index.html" class="itemlinks">Home</a></li>
+                <li class="navitems"><a href="vide.html" class="itemlinks">Video</a></li>
+                <li class="navitems"><a href="aboutus.html" class="itemlinks">About</a></li>
+
+            </ul>
+
+            <div id="burger">
+                <div class="burgerlines"></div>
+                <div class="burgerlines"></div>
+                <div class="burgerlines"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<div class="video_sec">
+
+    
+    <div class="vid-container" >
+        <h1 class="video_title" data-aos="fade-up" data-aos-duration="1000">100% risk free </h1>
+
+        <video controls data-aos="flip-down" data-aos-duration="1000">
+            <source src="rel-video1.mp4" type="video/mp4">
+        </video>
+
+        <p>
+
+            We also offer 30 days warranty if you feel that you aren’t satisfied with our product. Let us know your feedback and how can we help improve your experience and satisfaction if this.
+            <br>
+            <br>
+            <br>
+            Customer’s experience, satisfaction and solving your problems is our main priority to provide you the best!
+    
+        </p>
+    </div>
+
+</div>
+    
+    <div class="footer-all">
+
+
+        <footer>
+    
+        <div class="icon-container">
+            <img src="assets/img/r-logo.svg" class="logo-footer" data-aos="fade-up" data-aos-duration="1000">
+            <div class="icon2">
+                <a href="https://www.facebook.com/Relenture">
+                    <img src="assets/img/fb.svg" alt="" data-aos="fade-left" data-aos-duration="2000">
+                </a>
+                <a href="https://www.instagram.com/relenture/">
+                    <img src="assets/img/IG.svg" alt="" data-aos="fade-right" data-aos-duration="2000">
+                </a>
+            </div>
+        </div>
+    
+        <hr>
+        <p> Relenture &copy; <script>document.write(new Date().getFullYear());</script>, All Rights Reserved.</p>
+        </footer>
+    
+    </div>
+    
+
+    <style>
+       /* width */
+       ::-webkit-scrollbar {
+       width: 10px;
+       }
+       
+       /* Track */
+       ::-webkit-scrollbar-track {
+       box-shadow: inset 0 0 5px grey; 
+       }
+       
+       /* Handle */
+       ::-webkit-scrollbar-thumb {
+       background: rgb(208, 34, 34); 
+       }
+       
+       /* Handle on hover */
+       ::-webkit-scrollbar-thumb:hover {
+       background: #df2323;
+       }
+   </style>
+
+   <!--JS MENU BAR-->
+
+   <script
+
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
+    
+    <script>
+        const burger = document.getElementById('burger');
+        const links = document.getElementById('links');
+
+        burger.addEventListener('click', () => {
+            links.classList.toggle('active');
+        })
+
+        $("#links").click(() => {
+            links.classList.remove('active');
+        })
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+   
+</body>
+</html>

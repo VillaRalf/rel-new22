@@ -1,0 +1,129 @@
+.contact-con{
+  background-image: url("assets/img/bg-color2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+.contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .contact-container .img{
+    display: block;
+  }
+  .contact-container{
+    position: relative;
+  }
+  .contact-title{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    background: url("assets/img/red.svg");
+    background-repeat: repeat;
+    -webkit-background-clip: text; 
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-fill-color: transparent;
+}
+  
+  .contact-container{
+    min-height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-container .kahon1{
+    position: absolute;
+    top: 20%;
+    right: 91%;
+    width: 10%;
+    z-index: -9;
+    height: auto;
+  }
+  .contact-container .kahon2{
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    width: 10%;
+    height: auto;
+  }
+  .card_box{
+    background: #2f3542;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    border: 1px solid rgba(251, 0, 0, 0.7);
+    background: linear-gradient(180deg, rgba(251, 0, 0, 0.7) 0%, rgba(173, 33, 33, 0) 100%);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-icon{
+    font-size: 40px;
+    background: linear-gradient(180deg, #EE1111 0%, rgba(255, 0, 0, 0.979167) 0.01%, rgba(0, 0, 0, 0.41) 100%);
+    width: 70px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  
+  .card_box:hover .card-icon{
+    background: none;
+    color: #F31E1E;
+    transform: scale(1.6);
+  }
+  
+  .card_box p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s linear;
+    width: 100%;
+  }
+  
+  .card_box:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
+  
+  .card_box:hover{
+    box-shadow: 0 10px 35px rgba(255, 0, 0, 0.775);
+ }
+  
+  @media screen and (max-width:800px) {
+    .contact-info{
+      flex-direction: column;
+    }
+    .card_box{
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+    .card_box p{
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:400px) {
+    .card_box p{
+      font-size: 11px;
+      width: 100%;
+    }
+  }

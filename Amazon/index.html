@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    
+    <title>RELENTURE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Icon logo link  -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon_r.svg">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Contact icon cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+</head>
+<body>
+
+  <!--NAVBAR SECTION-->
+  <header>
+    <div class="limiter">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/img/r-logo.svg" alt=""> 
+            </div>
+
+            <ul class="navlinks" id="links">
+                <li class="navitems"><a href="#home" class="itemlinks">Home</a></li>
+                <div class="cont">
+                    <li class="navitems"><a href="#product" class="itemlinks" onclick="togglePopup1()">Contact Us</a></li>
+                </div>
+                <li class="navitems"><a href="vide.html" class="itemlinks">Video</a></li>
+                <li class="navitems"><a href="aboutus.html" class="itemlinks">About</a></li>
+
+            </ul>
+
+            <div id="burger">
+                <div class="burgerlines"></div>
+                <div class="burgerlines"></div>
+                <div class="burgerlines"></div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $("header").addClass("black");
+        }
+        else{
+            $("header").removeClass("black");
+        }
+    });
+</script>
+
+<!--HOME-->
+
+<section class="home" id="home">
+    <div class="home-container">
+
+        <div class="left-part" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Relenture's brand new 
+                portable neck fan</h1>
+            <p>Check out our Innovative Portable Neck Fan. Available to purchase now at amazon.com!
+                <br>
+                <br>
+                Get a chance to get an additional free product and a 20% discount (for selected items) on your next purchases once you tried and like our product. </p>
+            
+            <div class="buttons">
+                <a href="https://www.amazon.com/dp/B0B3SL9MSJ?ref=myi_title_dp&fbclid=IwAR0cUDejWBkQq-k_EOQgROQWuCnmNiJ_XpODdRKELgGwDSeD0QrcQwUXvmQ">
+                    <button type="button" class="button1">Shop now</button>
+                </a>
+                <a href="learn_more.html">
+                    <button type="button" class="button2">Learn More </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="right-part" data-aos="fade-down" data-aos-duration="1000">
+            <div class="place-holder">
+                <img src="assets/img/neckf.svg" class="neck-fan">
+                <img src="assets/img/stand.svg" class="stand">
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!--HOME-END-->
+    
+    <!-- BEST PRODUCST START -->
+    <section  class="best-product" id="product">
+
+        <h1 class="best-product-title" data-aos="fade-up" data-aos-duration="1000">MY <span>PRODUCTS</span> </h1>
+    
+            <div class="app">
+                <div class="cardList">
+                <button class="cardList__btn btn btn--left">
+                    <div class="icon1">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                    </div>
+                </button>
+            
+                <div class="cards__wrapper" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card current--card">
+                    <div class="card__image">
+                        <img class="image1" src="assets/img/neck2.svg" alt="" />
+                    </div>
+                    </div>
+            
+                    <div class="card next--card">
+                    <div class="card__image">
+                        <img src="assets/img/coming-soon-new.svg" alt="" />
+                    </div>
+                    </div>
+            
+                    <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="assets/img/coming-soon-new.svg" alt="" />
+                    </div>
+                    </div>
+                </div>
+            
+                <button class="cardList__btn btn btn--right">
+                    <div class="icon1">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                    </div>
+                </button>
+                </div>
+            
+                <div class="infoList" data-aos="fade-down" data-aos-duration="1000">
+                <div class="info__wrapper">
+                    <div class="info current--info">
+                        <h1 class="text name">NECK FAN</h1>
+                        <h4 class="text location">Amazon</h4>
+                        <a href="https://www.amazon.com/dp/B0B3SL9MSJ?ref=myi_title_dp&fbclid=IwAR0cUDejWBkQq-k_EOQgROQWuCnmNiJ_XpODdRKELgGwDSeD0QrcQwUXvmQ">
+                            <button class="button1">
+                            <p class="text description">Price <s>$31.99</s> <br> $25.73</p>
+                            </button>
+                        </a>
+                    </div>
+            
+                    <div class="info next--info">
+                        <h1 class="text name">???</h1>
+                        <h4 class="text location">Amazon</h4>
+                        <button class="button1">
+                            <p class="text description">Price $30</p>
+                        </button>                
+                    </div>
+            
+                    <div class="info previous--info">
+                        <h1 class="text name">???</h1>
+                        <h4 class="text location">Amazon</h4>
+                        <button class="button1">
+                            <p class="text description"> Price $30</p>
+                        </button>               
+                    </div>
+                </div>
+                </div>
+            
+            
+                <div class="app__bg">
+                <div class="app__bg__image current--image">
+                    <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+                </div>
+                <div class="app__bg__image next--image">
+                    <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+                </div>
+                <div class="app__bg__image previous--image">
+                    <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+                </div>
+                </div>
+            </div>
+        </section>
+          
+          <svg class="icons1" style="display: none;">
+            <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+              <polyline points='328 112 184 256 328 400'
+                     style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+            <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+              <polyline points='184 112 328 256 184 400'
+                     style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+          </svg>
+          
+          <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+          <script type="text/javascript" src="script.js"></script>
+  
+     <!-- BEST PRODUCST END -->
+
+  
+<!--STORE-SLIDE--->
+
+<div class="stores-all">
+
+  <div class="stores-container">
+
+    <div class="slider">
+        <div class="slide-track">
+
+            <!--1ST SET--->
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+
+            <!--2ND SET--->
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+            <div class="slide">
+                <img src="assets/img/relenture.png" alt="" class="apple">
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<!--STORES-SLIDE-END-->
+    <!-- CONTACT START -->
+
+    <div class="contact-con">
+        <h1 class="contact-title" id="contact" data-aos="fade-top" data-aos-duration="1000">CONTACT <span>US</span> </h1>
+
+        <section class="contact-container"> 
+
+            <div class="contact-info" data-aos="flip-down" data-aos-duration="1000">
+                <div class="card_box">
+                    <i class="card-icon far fa-envelope"></i>
+                    <p>contact@relenturestore.com</p>
+                </div>
+        
+                <div class="card_box"data-aos="flip-down" data-aos-duration="1000">
+                <i class="card-icon fas fa-phone"></i>
+                <p>(602) 460-7148 </p>
+                </div>
+        
+                <div class="card_box" data-aos="flip-down" data-aos-duration="1000">
+                <i class="card-icon fas fa-map-marker-alt"></i>
+                <p>United States of America</p>
+                </div>
+            </div>
+          
+        </section>  
+     </div> 
+    <!-- CONTACT END -->
+   
+
+        <!--ABOUT-->
+
+        <section class="about" id="about">
+            <div class="about-container">
+    
+                <div class="left-part-about" data-aos="fade-up" data-aos-duration="2000">
+                    <h1>100% <span>Superior Quality</span> </h1>
+                    <p>Relenture family guarantees you that you can have best experience and satisfaction on our first product and more of our upcoming future products. Try it out and let us know your experience about it!
+                       
+                    </p>
+                    <div class="buttons">
+                    <a href="#contact">
+                    </a>
+                </div>
+                </div>
+    
+                <div class="right-part-about" data-aos="fade-down" data-aos-duration="2000">
+                    <img src="assets/img/model11.svg" class="model">
+                </div>
+                
+            </div>
+        </section>
+
+
+       <!--popup box-->
+
+    <div class="popup" id="popup-1" >
+        <div class="overlay"></div>
+    
+
+        <div class="content">
+            <img class="close-btn" onclick="togglePopup1()" src="assets/img/close.png" alt="">
+            
+            <div class="box-contact">
+                <div class="popup-title">
+                    <h1>CONTACT <span>US</span> </h1>
+                </div>
+
+            <form action="https://formspree.io/f/xeqdozey" method="POST">   
+              <input name="Name" type="text" id="Name" class="feedback-input" placeholder="Enter your name" required="" />   
+              <input name="Sender" id="Sender"  type="email" class="feedback-input" placeholder="Enter your email" required=""/>
+              <textarea name="Message" class="feedback-input" id="Message" placeholder="Enter your messages" required=""></textarea>
+              <button id="btn" type="submit" value="SUBMIT">SUBMIT</button>
+              
+            </form>
+          </div>
+        </div>
+    </div>
+   <!--ABOUT-END-->
+   <script>
+    function togglePopup1(){
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+</script>
+
+<div class="footer-all">
+
+
+   <footer>
+
+    <div class="icon-container">
+        <img src="assets/img/r-logo.svg" class="logo-footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="icon2">
+            <a href="https://www.facebook.com/Relenture">
+                <img src="assets/img/fb.svg" alt="" data-aos="fade-left" data-aos-duration="2000">
+            </a>
+            <a href="https://www.instagram.com/relenture/">
+                <img src="assets/img/IG.svg" alt="" data-aos="fade-right" data-aos-duration="2000">
+            </a>
+        </div>
+    </div>
+
+    <hr>
+    <p> Relenture &copy; <script>document.write(new Date().getFullYear());</script>, All Rights Reserved.</p>
+   </footer>
+
+</div>
+
+
+          <style>
+            /* width */
+            ::-webkit-scrollbar {
+            width: 10px;
+            }
+            
+            /* Track */
+            ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: rgb(208, 34, 34); 
+            }
+            
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+            background: #df2323;
+            }
+        </style>
+
+         <!--==JS-Swiper====================================-->
+         <script src="js/swiper-bundle.min.js"></script>
+    
+         <!--==script=======================================-->
+         <script>
+             /*Initialize Swiper*/
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 1,
+              spaceBetween: 10,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              autoplay: {
+              delay: 6000,
+              disableOnInteraction: false,
+            },
+              navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+              breakpoints: {
+                360: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 20,
+                },
+                540: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                1200: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+              },
+            });
+         </script>
+
+        <!-- swiper js link      -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="js/script.js"></script>
+            
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+        crossorigin="anonymous"></script>
+        
+        <script>
+            const burger = document.getElementById('burger');
+            const links = document.getElementById('links');
+    
+            burger.addEventListener('click', () => {
+                links.classList.toggle('active');
+            })
+    
+            $("#links").click(() => {
+                links.classList.remove('active');
+            })
+        </script>
+
+        <script>
+            const buttons = document.querySelectorAll('button');
+
+            buttons.forEach( button =>{
+                button.addEventListener('click',()=>{
+                    const faq = button.nextElementSibling;
+                    const icon = button.children[1];
+
+                    faq.classList.toggle('show');
+                    icon.classList.toggle('rotate');
+                })
+            })
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+
+         <!--FAQS-SCRIPT-->
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+
+</body>
+</html>

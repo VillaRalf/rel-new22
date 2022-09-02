@@ -1,0 +1,124 @@
+.learn-more{
+    width: 100%;
+    background-image: url("assets/img/learn-morebg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+    height: 750px;
+
+    
+    .learn-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+ 
+    
+    .box-learn{
+        border-radius: 10px;
+        width: 1200px;
+        background: rgba(251, 0, 0, 0.71);
+        padding: 100px 100px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 200px;    
+
+    
+        h1{
+            text-align: center;
+            background: url("assets/img/gold1.svg");
+            background-repeat: repeat;
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            font-size: 25px;
+            margin-bottom: 20px;
+            
+        }
+        p{
+            color: white;
+        }
+       
+    }
+  }
+}
+
+@media(max-width:1345px){
+    .learn-more{
+        height: 800px;
+    .learn-container{
+        padding: 0px 100px;
+        .box-learn{
+            width: 100%;
+    
+        }
+     }
+  } 
+}
+@media(max-width:1250px){
+    .learn-more{
+        height: 1400px;
+    .learn-container{
+        .box-learn{
+            p{
+                text-align: center;
+            }
+        }
+     }
+  } 
+}
+
+@media(max-width:1250px){
+    .learn-more{
+        height: auto;
+    }
+    .box-learn{
+        margin-bottom: 80px;
+
+    }
+}
+
+@media(max-width:710px){
+    .learn-more{
+        height: auto;
+    }
+    .box-learn{
+        margin-bottom: 80px;
+        padding: 100px 50px !important;
+
+    }
+}
+
+@media(max-width:550px){
+    .learn-more{
+        height: auto;
+    }
+    .box-learn{
+        margin-bottom: 80px;
+        padding: 50px 10px !important;
+
+    }
+}
+
+@media(max-width:450px){
+    .learn-more{
+        height: auto;
+    }
+    .box-learn{
+        margin-bottom: 80px;
+        padding: 50px 10px !important;
+        width: 300px !important;
+    }
+    
+}
+
+@media(max-width:330px){
+    .learn-more{
+        height: auto;
+    }
+    .box-learn{
+        margin-bottom: 80px;
+        padding: 50px 10px !important;
+        width: 250px !important;
+    }
+    
+}
